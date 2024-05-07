@@ -1,0 +1,8 @@
+.back-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 10px;
+    color: black; /* Adjust font color */
+}

@@ -1,0 +1,23 @@
+
+<div class="container">
+  <img src="../../../assets/Logo.jpeg" alt="LoginPage">
+  <h3>Welcome to stock+</h3>
+  <div>
+    <label for="email" class="form-label">Email address: </label><br>
+    <mat-form-field appearance="outline">
+        <mat-label>Enter Email</mat-label>
+        <input matInput placeholder="Enter Your email here" id="email" type="email">
+    </mat-form-field>
+    </div>
+    <div>
+    <label for="password" class="form-label">Password: </label><br>
+    <mat-form-field appearance="outline">
+        <mat-label>Enter your password</mat-label>
+        <input matInput [type]="hide ? 'password' : 'text'"id="password">
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+    </mat-form-field>
+    </div>
+    <button mat-flat-button color="primary" [routerLink]="'home'">submit</button>    
+</div>

@@ -1,0 +1,26 @@
+.card {
+    /* Set a fixed height for the card */
+    height: 400px; /* Adjust as needed */
+}
+
+.card-body {
+    /* Set a fixed height for the card body */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navbar-brand img {
+width: 50px;
+height: auto;
+background-color: #000000;  /* Maintain aspect ratio */
+}
+
+
+iframe {
+    /* Make the iframe fill the available space */
+    width: 100%;
+    height: 100%;
+    border: none; /* Remove iframe border */
+}
